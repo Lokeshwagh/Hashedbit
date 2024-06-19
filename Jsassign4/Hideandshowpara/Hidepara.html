@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and show parausing the html</title>
+</head>
+<body>
+    <center>
+        <h1> Hide and Show paragraph click on the button</h1>
+
+        <h2 id="para">Click on the button and hide My Word</h2>
+        <button onclick="HiddenPara()" >Click to hide para</button><br>
+        
+    </center>
+    <script>
+        let flag=1
+        function HiddenPara(){
+            if(flag==1){
+            flag=0;
+            document.getElementById("para").style.visibility = "hidden";        
+        }
+            else{
+                document.getElementById("para").style.visibility="visible";
+                flag=1;
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

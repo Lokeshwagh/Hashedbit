@@ -1,0 +1,223 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   box-sizing: border-box;  
+}
+
+body{
+    background-color: black;
+    color: #ffffff; 
+    overflow-x: hidden; 
+}
+::-webkit-scrollbar{
+    height: 0px;
+    width: .2rem;
+}
+::-webkit-scrollbar-track{
+  background:rgb(0, 0, 0);
+}
+::-webkit-scrollbar-thumb{
+  background-color:rgb(14, 159, 169);
+  border-radius: 20px;
+}
+header{
+    padding: 25px;
+}
+nav{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+nav img{
+    width: 104px;
+    height: 87px;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-flex;
+    margin: 10px 20px;
+    justify-content: space-between;  
+    animation: slideTop 2s ease forwards ; 
+    animation-delay: 0.5s;
+}
+nav ul li a{
+    text-decoration: none;
+    color:#08bfdb;
+    font-size: 20px;
+    font-weight: 600;
+    top: 100%;
+    padding: 0rem 4%;
+    display: flex;
+    flex-direction: column;
+ }
+ul li:hover{
+        color: #b5ce28;
+        transform: translate(0px ,-3px);
+    }
+section{
+    height: 90vh;
+    width: 100%;
+    padding: 50px 70px;
+} 
+.Home{
+     display: flex;
+     flex-wrap: wrap;
+}
+
+#LeftPart{
+     width: 50%;
+     height: 100vh;
+     margin: 100px 0 0 0;
+}
+#LeftPart h1{
+    font-size: 30px;
+    padding: 10px 0 30px 0;
+}
+.Leftpartp2{
+    padding: 10px 0 10px 0;
+    font-size: 20px;
+    background-image: linear-gradient(to right, rgb(255, 3, 209), rgb(69, 69, 159),rgb(255, 255, 33));
+    -webkit-background-clip:text;
+    color: transparent;
+}
+#rightPart{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;    
+}
+.secImg{
+      border: 2px solid ;
+      border-radius: 15px;
+      margin: 30px 0 10px 0px;
+}
+.secImg2{
+    border: 2px solid ;
+    border-radius: 15px;
+    margin: 250px 0 0 -50px;
+}
+.secImg:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 5px cyan,0 0 20px cyan,
+    0 0 0px cyan,0 0 20px cyan;
+}
+.secImg2:hover{
+    box-shadow: 0 0 5px cyan,
+        0 0 5px cyan,0 0 20px cyan,
+        0 0 0px cyan,0 0 20px cyan;
+}
+#Linkes{
+        border: 3px solid red;   
+    }
+.li1{
+        width: 9vw;
+        height: 30px;
+        border: 2px solid red;
+        border-radius: 50%;
+        color: #18aaa5;
+    }
+#linkes{
+        height: 90px;
+        width: 400px;
+    }
+#linkes a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(100, 139, 155);
+    border-radius: 10px;
+    background: transparent;
+    color: #77bad5;
+    font-size: 30px;
+    margin: 8px;
+    margin-top: 23px;
+    margin-left: 4px;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overflow: hidden;
+    animation: slideLeft 1s ease forwards;
+    box-shadow: 0 0 2px #ded114, 0 0 6px #bee72c,0 0 0px aqua;
+    }
+#linkes a:hover{
+        color: white;
+        background-color:#147f89 ;
+        box-shadow: 0 0 5px cyan,
+        0 0 5px cyan,0 0 0px cyan,
+        0 0 0px cyan,0 0 20px cyan;
+     }
+
+     /* About Section */
+#secContainter{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 100vh;
+        padding: 10% 8%;
+}
+#img2{
+        border: #000;
+        border-radius: 5%;
+        height: 45vh;
+        width: 200px;
+        box-shadow:  0 0 5px cyan,
+        0 0 5px cyan,0 0 0px cyan,
+        0 0 0px cyan,0 0 20px cyan;
+}
+#Parabout{
+        padding-left: 30px;
+        width: 50%;
+        font-size: 20px;
+        background-image: linear-gradient(to right, rgb(243, 114, 114),rgb(44, 121, 160));
+        -webkit-background-clip: text;
+        color: transparent;
+}
+
+#Contact{
+    height: 100vh;
+}
+.formFill{
+  width: 300px;
+  height: 478px;
+  font-size: 20px;
+  border: 2px solid #88c7ff;
+  border-radius: 30px;
+}
+form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 20px 30px;
+  margin: 20px;
+  gap: 5px;
+}
+form input{
+  background-color: transparent;
+  color: white;
+  height: 30px;
+  border: 2px solid aquamarine;
+  border-radius: 5px;
+  padding: 0 0 0 5px;
+}
+#submit{
+  margin: 30px;
+  border: 2px solid aqua;
+}
+
+
+/* Footer
+ */
+ .footer {
+    padding: 2rem;
+    font-size: 20px;
+    background: rgb(80, 23, 80);
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+  }

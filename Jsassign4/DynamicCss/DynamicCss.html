@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling</title>
+    <style>
+        .text-here {
+            font-size: 55px;
+        }
+        .stylebt {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-here" id="text-container">This is some example text</div>
+    <br>
+    
+    <input type="text" id="colorbox" placeholder="Enter color">
+    <button id="colorchange">Change Color</button>
+    <br><br>
+    
+    <input type="range" id="fontsize" min="10" max="100" value="55">
+    <br><br>
+    
+    <button class="stylebt" id="underline">Underline</button>
+    <button class="stylebt" id="italic">Italic</button>
+    <button class="stylebt" id="bold">Bold</button>
+    <br><br>
+    
+    <select id="list">
+        <option value="serif">Serif</option>
+        <option value="sans-serif">Sans-Serif</option>
+        <option value="monospace">Monospace</option>
+        <option value="cursive">Cursive</option>
+        <option value="fantasy">Fantasy</option>
+    </select>
+    <br><br>
+    
+    <button id="getstyle">Get CSS Properties</button>
+    <p id="css-props"></p>
+    
+    <script>
+        document.getElementById('colorchange').addEventListener('click', () => {
+            const color = document.getElementById('colorbox').value;
+            document.getElementById('text-container').style.color = color;
+        });
+
+        document.getElementById('fontsize').addEventListener('input', (event) => {
+            const fontSize = event.target.value + 'px';
+            document.getElementById('text-container').style.fontSize = fontSize;
+        });
+
+        document.getElementById('underline').addEventListener('click', () => {
+            const textContainer = document.getElementById('text-container');
+            textContainer.style.textDecoration = textContainer.style.textDecoration === 'underline' ? 'none' : 'underline';
+        });
+
+        document.getElementById('italic').addEventListener('click', () => {
+            const textContainer = document.getElementById('text-container');
+            textContainer.style.fontStyle = textContainer.style.fontStyle === 'italic' ? 'normal' : 'italic';
+        });
+
+        document.getElementById('bold').addEventListener('click', () => {
+            const textContainer = document.getElementById('text-container');
+            textContainer.style.fontWeight = textContainer.style.fontWeight === 'bold' ? 'normal' : 'bold';
+        });
+
+        document.getElementById('list').addEventListener('change', (event) => {
+            const fontFamily = event.target.value;
+            document.getElementById('text-container').style.fontFamily = fontFamily;
+        });
+
+        document.getElementById('getstyle').addEventListener('click', () => {
+            const textContainer = document.getElementById('text-container');
+            const styles = window.getComputedStyle(textContainer);
+            const cssProps = `color: ${styles.color}; text-decoration: ${styles.textDecoration}; font-style: ${styles.fontStyle}; font-weight: ${styles.fontWeight}; font-family: ${styles.fontFamily}; font-size: ${styles.fontSize};`;
+            document.getElementById('css-props').textContent = cssProps;
+        });
+    </script>
+</body>
+</html>

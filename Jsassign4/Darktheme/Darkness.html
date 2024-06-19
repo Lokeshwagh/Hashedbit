@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background color</title>
+</head>
+<body>
+    <center><h1 >Hello click to dark mode is on</h1>
+    <button style="border: 3px solid blueviolet; border-radius: 10px; width: 300px; height: fit-content; background-color: aquamarine;" width="300px" height="500px" onclick="Darkmode()"> click me to on dark mode</button>
+    <button style="border: 3px solid blueviolet; border-radius: 10px; width: 300px; height: fit-content; background-color: aquamarine;"onclick="isDark()"> click me to on RedMode</button></center>
+
+   <script>
+    let Dark=true;
+    function Darkmode(){
+       if(Dark==true){
+        Dark=false;
+        document.body.style.backgroundColor="gray";   
+       }
+        else if(Dark==false){
+           Dark=true;
+         document.body.style.backgroundColor="white";
+        }
+    }
+    //  or
+
+    function isDark(){
+        if(Dark){
+            document.body.style.backgroundColor="red";
+
+        }
+        else{ document.body.style.backgroundColor="white"}
+        Dark=!Dark;
+    }
+   </script>
+</body>
+</html>

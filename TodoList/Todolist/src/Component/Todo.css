@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Main{
+     width: 400px;
+     height: auto;
+     margin: auto;
+     padding: 40px;
+     border: 2px solid black;
+     border-radius: 15px;
+     background: url("https://images.pexels.com/photos/949587/pexels-photo-949587.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.inputdiv input{
+  border: 3px solid rgb(13, 9, 8);
+  border-radius: 3px;
+  margin: auto;
+  width: 249px;
+  height: 38px;
+  padding-left: 10px;
+  color: black; 
+}
+.inputdiv button{
+  margin-left: 18px;
+  width: 35px;
+  height: 38px;
+  color: aqua;
+  background: black;
+  border: 3px solid rgb(131, 131, 233);
+  border-radius: 3px;
+}
+.taskDiv{
+    margin:10px 10px;
+    font-size: 20px;
+    color: aqua;
+}
+.values{
+    color: aqua;
+    width: 150px;
+    height: 25px;
+    padding: 0 0 0 10px;
+    margin: 0 10px 10px 0;
+    font-weight: bold;
+    border: 3px solid rgb(2, 2, 1);
+    border-radius: 3px;
+}
+
+.clear{
+    width: 80px;
+    height: 45px;
+    font-weight: bold;
+    background-color: cyan;
+    border : 3px solid cyan;
+    border-radius: 3px;
+}
